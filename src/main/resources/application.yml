@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Token Generator
+  profiles:
+    active: local
+  sleuth:
+    enabled: false
+
+server:
+  port: 9090
+
+jwt:
+  sirius:
+    secret: 2N+Pd5jwo/UXksl/EsDncl3Y7H0M7OQ/FzkvZ5o0MuM=
+    issuer: sirius
+    expiry: ${SIRIUS_JWT_EXPIRY:10}
+  cognito:
+    issuer: http://jwt-cognito-is-not-used-in-docker-compose
+  adfs:
+    issuer: http://jwt-adfs-is-not-used-in-docker-compose
+    public-key-url: http://jwt-adfs-is-not-used-in-docker-compose
+    secret: adfs-secret-is-not-used-in-docker-compose
