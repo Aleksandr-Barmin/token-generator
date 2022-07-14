@@ -11,7 +11,7 @@ server:
 
 jwt:
   sirius:
-    secret: 2N+Pd5jwo/UXksl/EsDncl3Y7H0M7OQ/FzkvZ5o0MuM=
+    secret: qd6qf4D7pfDVLTYty2ZoYbj4eUic3qP4HAxf4PyVodo=
     issuer: sirius
     expiry: ${SIRIUS_JWT_EXPIRY:10}
   cognito:
